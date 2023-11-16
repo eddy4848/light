@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="./images/menu.png" class="menu-img" alt="">
+            <img src="./images/logo.png" class="logo" alt="">
+            <ul>
+                <li>
+                    <a href="">Lastest</a>
+                </li>
+                    <li>
+                        <a href="">Modern</a>
+                    </li>
+                   <li>
+                     <a href="">Comtemporary</a>
+                    </li>
+                    <li>
+                        <a href="">Affordable</a>
+                    </li>
+                
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+
+        <div class="lamp-container">
+            <img src="./images/lamp.png" class="lamp" alt="">
+            <img src="./images/light.png" class="light" alt="" id="light">
+        </div>
+
+        <div class="text-container">
+            <h1 id="col" class="hah">
+                Latest <br> in Lighting 
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sequi officia alias culpa error adipisci, repudiandae ratione voluptates inventore ex perspiciatis facere sunt odit nisi iste dolorem vel sed unde</p>
+            <a href="">Check All Collection</a>
+
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+        var col = document.getElementById("col")
+
+        function toggleBtn(){
+            btn.classList.toggle("active");
+            light.classList.toggle("on")
+            col.classList.toggle("color")
+        }
+    </script>
+    
+</body>
+</html>
